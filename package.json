@@ -3,9 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://sgchr.github.io/funclick/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:gh-pages": "GITHUB_ACTIONS=true vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
