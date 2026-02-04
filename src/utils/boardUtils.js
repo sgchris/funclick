@@ -16,13 +16,13 @@ export function calculateBoardSize(iteration) {
 
 /**
  * Calculate the time limit for a given iteration
- * Starts at 3.0 seconds, decreases by 0.1s each iteration, minimum 2.0s
+ * Starts at 4.0 seconds, decreases by 0.1s each iteration, minimum 2.0s
  * 
  * @param {number} iteration - Current iteration (1-indexed)
  * @returns {number} Time limit in seconds
  */
 export function calculateTimeLimit(iteration) {
-  return Math.max(2.0, 3.0 - (iteration - 1) * 0.1)
+  return Math.max(2.0, 4.0 - (iteration - 1) * 0.1)
 }
 
 /**

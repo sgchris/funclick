@@ -20,8 +20,8 @@ export const initialState = {
   tiles: [],
   nextExpectedNumber: 1,
   highestClicked: 0,
-  timeLimit: 3.0,
-  timeRemaining: 3.0,
+  timeLimit: 4.0,
+  timeRemaining: 4.0,
   globalNextNumber: 1,
 }
 
@@ -103,7 +103,7 @@ export function gameReducer(state, action) {
       const newBoardSize = 10 + Math.floor((nextIteration - 1) / 6) * 2
       
       // Calculate new time limit (decreases by 0.1s each iteration, min 2.0s)
-      const newTimeLimit = Math.max(2.0, 3.0 - (nextIteration - 1) * 0.1)
+      const newTimeLimit = Math.max(2.0, 4.0 - (nextIteration - 1) * 0.1)
 
       return {
         ...state,
